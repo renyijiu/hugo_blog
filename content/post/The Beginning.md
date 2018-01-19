@@ -22,7 +22,7 @@ mathjax: false
 
    这个博客有了大致的样子，对于这些框架和主题，我只是个使用者，(**这是本博客使用参考的主题**----[daisygao的github](https://github.com/daisygao/hexo-themes-cover),**感谢下这些奉献的人**）但对于一个我这种对前端完全没有知识储备的小白也是一个艰难的过程。这几天的不断的百度，不断的谷歌**（**这里不得不夸下**google浏览器**，这真是浏览器的王者，使用体验非常好。顺带说下，翻墙真的太爽了，外面的世界很精彩**）**，慢慢的也都有所了解了，也大致知道了自己后面需要做的。毕竟刚刚开始，后面自己会学着慢慢的增加一些功能。<!--more-->
    
-   ![enter image description here](http://github-renyijiu.qiniudn.com/sky.jpg)
+   ![enter image description here](https://i.loli.net/2018/01/19/5a620fc16202a.jpg)
 
 # 从windows到ubuntu
 

@@ -116,9 +116,9 @@ mathjax: false
 
 示例：
 
-        ![美图](http://github-renyijiu.qiniudn.com/2.jpg)
+        ![美图](https://i.loli.net/2018/01/19/5a620f42aa3b5.jpg)
 
-![美图](http://github-renyijiu.qiniudn.com/2.jpg)
+![美图](https://i.loli.net/2018/01/19/5a620f42aa3b5.jpg)
 
 ### **10. 分割线**
 三个或更多-_*，必须单独一行，可含空格
