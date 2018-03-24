@@ -30,7 +30,7 @@ Stimulus是2018年年初Basecamp开源的一个新的前端框架，是一个轻
 
 ![stimulus.png](https://i.loli.net/2018/03/24/5ab5f63f87527.png)
 
-框架通过`data-contoller` `data-target` `data-action`等属性将HTML元素与JavaScript行为绑定。
+框架通过`data-controller` `data-target` `data-action`等属性将HTML元素与JavaScript行为绑定。
 
 - `data-controller` 将HTML与对应的JavaScript代码进行关联
 - `data-action` 进行相应的事件关联处理
