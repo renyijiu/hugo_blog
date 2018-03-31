@@ -75,7 +75,7 @@ application.start()
 对应的JavaScript代码：
 
 ```javascript
-const stilumus = Stimulus.Application.start();
+const stimulus = Stimulus.Application.start();
 stimulus.register("tabs", class extends Stimulus.Controller {
 
   static get targets() {
