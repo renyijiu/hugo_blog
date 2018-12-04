@@ -3,15 +3,15 @@ title: "Python学习 一 递归"
 date: 2014-11-10 23:11:48
 lastmod: 2018-01-14T20:55:16+08:00
 draft: false
-keywords: []
+keywords: ['python', '递归']
 description: ""
 tags: []
 categories: ['Python']
-author: ""
+author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."

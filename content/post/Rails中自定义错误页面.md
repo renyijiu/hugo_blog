@@ -3,15 +3,15 @@ title: "Rails中自定义错误页面"
 date: 2016-10-30 14:24:10
 lastmod: 2018-01-14T20:57:32+08:00
 draft: false
-keywords: []
+keywords: ['rails', '错误', '自定义错误']
 description: ""
 tags: []
 categories: []
-author: ""
+author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."

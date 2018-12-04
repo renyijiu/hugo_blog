@@ -3,16 +3,16 @@ title: "Stringy Strings"
 date: 2017-08-21T22:08:36+08:00
 lastmod: 2018-01-14T21:01:23+08:00
 draft: false
-keywords: []
+keywords: ['codewars']
 description: ""
-tags: []
+tags: ['codewars']
 categories: ['codewars']
 author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
-toc: false
+comment: true
+toc: true
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: false

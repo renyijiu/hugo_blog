@@ -2,15 +2,15 @@
 title: "Mac更换壁纸小脚本"
 date: 2018-03-19T21:56:17+08:00
 draft: false
-keywords: []
+keywords: ['mac', '脚本', '壁纸']
 description: "ruby小脚本，更换电脑壁纸"
 tags: []
 categories: ['ruby']
-author: ""
+author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."

@@ -3,7 +3,7 @@ title: "Form表单遇到的小问题"
 date: 2017-11-12T17:12:55+08:00
 lastmod: 2018-01-14T21:04:52+08:00
 draft: false
-keywords: []
+keywords: ['rails', 'form']
 description: ""
 tags: []
 categories: ['Rails']
@@ -11,7 +11,7 @@ author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."

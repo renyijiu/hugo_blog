@@ -3,7 +3,7 @@ title: "GET 和 POST 的区别"
 date: 2015-05-14 22:43:49
 lastmod: 2018-01-14T20:25:00+08:00
 draft: false
-keywords: []
+keywords: ['get', 'post', 'http']
 description: ""
 tags: []
 categories: ['网络']
@@ -11,7 +11,7 @@ author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."

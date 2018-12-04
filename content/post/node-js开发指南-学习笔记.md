@@ -3,16 +3,16 @@ title: "Node Js开发指南 学习笔记"
 date: 2017-04-05 11:15:35
 lastmod: 2018-01-14T20:54:12+08:00
 draft: false
-keywords: []
+keywords: ['node', 'js', '笔记']
 description: ""
 tags: []
 categories: ['JavaScript']
-author: ""
+author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
-toc: false
+comment: true
+toc: true
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: false

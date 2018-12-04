@@ -3,7 +3,7 @@ title: "Action Cable的使用分析"
 date: 2016-10-26 22:39:07
 lastmod: 2018-01-14T17:21:10+08:00
 draft: false
-keywords: []
+keywords: ['action calble', 'rails']
 description: ""
 tags: []
 categories: ['Rails']
@@ -11,8 +11,8 @@ author: ""
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
-toc: false
+comment: true
+toc: true
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
 contentCopyright: false

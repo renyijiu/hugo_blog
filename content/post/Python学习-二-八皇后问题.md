@@ -3,15 +3,15 @@ title: "Python学习 二 八皇后问题"
 date: 2014-11-19 21:39:44
 lastmod: 2018-01-14T20:56:37+08:00
 draft: false
-keywords: []
+keywords: ['python', '八皇后']
 description: ""
 tags: []
 categories: ['Python']
-author: ""
+author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
-comment: false
+comment: true
 toc: false
 autoCollapseToc: false
 # You can also define another contentCopyright. e.g. contentCopyright: "This is another copyright."
