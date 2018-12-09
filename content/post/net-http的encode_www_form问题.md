@@ -6,7 +6,7 @@ draft: false
 keywords: ['ruby', 'url', 'encode']
 description: ""
 tags: []
-categories: ['Ruby']
+categories: ['日常踩坑']
 author: "renyijiu"
 
 # You can also close(false) or open(true) something for this content.
