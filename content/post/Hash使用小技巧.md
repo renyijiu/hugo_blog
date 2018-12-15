@@ -147,7 +147,7 @@ irb> custom_merge(a, b)
 
 ### 5. 格式化
 
-将hash中的key转成symbol格式，采用递归确保所有的key转换
+将hash中的`key`转成`symbol`格式，采用递归确保所有的key转换
 
 ```ruby
 def symbolize(obj)
@@ -177,7 +177,7 @@ irb> a = {'1' => 'a', '2' => 'b', '3' => 'c', d: {'hello' => "world", 'test' => 
         ]
     }
 }
-irb(main):030:0> symbolize(a)
+irb> symbolize(a)
 {
     :"1" => "a",
     :"2" => "b",
@@ -192,3 +192,46 @@ irb(main):030:0> symbolize(a)
     }
 }
 ```
+
+当然呢同理，使用上述方法也可以将`key`转成`string`格式。
+
+### 6. 删除空值
+
+如果是在单层的`hash`中需要去除`value`为空的`key`，可以直接使用ruby自带的`compact`方法。但是如果存在多层嵌套呢？就需要我们改造一下了。
+
+```ruby
+def deep_compact(hash)
+  return hash unless hash.is_a?(::Hash)
+
+  hash.each_with_object({}) do |(k, v), compact_hash|
+    if v.is_a?(::Hash)
+      compact_hash[k] = deep_compact(v)
+    else
+      compact_hash[k] = v unless v.nil?
+    end
+  end
+end
+
+# 示例
+
+irb> hash = { 1=> nil, 2 => 'renyijiu', 3 => { 4 => 'world', 6 => nil}}
+{
+    1 => nil,
+    2 => "renyijiu",
+    3 => {
+        4 => "world",
+        6 => nil
+    }
+}
+
+# 输出
+
+irb> deep_compact(hash)
+{
+    2 => "renyijiu",
+    3 => {
+        4 => "world"
+    }
+}
+```
+
