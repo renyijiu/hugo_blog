@@ -159,7 +159,7 @@ copyright = "Live For Dream, Dream For Love."            # default: author.name 
     alipay = "/img/reward/alipay.jpg"           # 支付宝二维码
 
   [params.coding]
-    enable = true
+    enable = false
 
   [params.social]                                         # 社交链接
     a-email = "mailto:me@renyijiu.com"
