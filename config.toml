@@ -57,7 +57,7 @@ copyright = "Live For Dream, Dream For Love."            # default: author.name 
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Renyijiu"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Rubyist", "Ruby", "Python", "Pythoner", "Ruby on Rails"]
+  keywords = ["Rubyist", "Ruby", "Python", "Pythoner", "Ruby on Rails", "Java"]
   description = "个人博客，记录日常开发遇到的问题以及感想，时不时吐槽"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
@@ -79,8 +79,8 @@ copyright = "Live For Dream, Dream For Love."            # default: author.name 
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
   autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
-  fancybox = false           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
-  instantclick = true
+  fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
+  instantclick = false
 
   # mathjax
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
@@ -134,10 +134,15 @@ copyright = "Live For Dream, Dream For Love."            # default: author.name 
     clientSecret = ""       # Your client secret
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = "renyijiu"              # Your GitHub ID
-    repo = "hugo_blog"               # The repo to store comments
-    clientId = "221a0444deadac33d361"           # Your client ID
-    clientSecret = "1db15d112545ece8a8783c4c5a80c8da260d60cc"       # Your client secret
+    owner = ''              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+
+  [params.utter]
+    repo = "renyijiu/hugo_blog"
+    issueTerm = "title" #设置每篇文章对应的 issue 的名字，可选 pathname title url，
+    theme = "github-light"
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
