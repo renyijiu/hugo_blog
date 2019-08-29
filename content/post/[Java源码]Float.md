@@ -38,7 +38,7 @@ Java中的`float`数据类型是个**单精度 32bit** 的 *IEEE 754* 标准的�
 
 * sign: 符号位，`1`位。0表示正数，1表示负数。
 * exponent: 指数位，`8`位。单精度的指数部分是−126～+127加上偏移值127，指数值的大小从1～254（0和255是特殊值）
-* fraction: 位数位，`23位`。在二进制中，第一个有效数字必定是1，因此这个1不会存储，即有24位，log 2**24=7.22，表示了可以保证`7`位的有效数字精度。
+* fraction: 尾数位，`23位`。
 
 举个简单的例子，现在有个"01000001001100010100011110101110"字符串进行简单的分析：
 
@@ -48,6 +48,14 @@ Java中的`float`数据类型是个**单精度 32bit** 的 *IEEE 754* 标准的�
 4. 于是得到浮点数为`1011.0001010001111010111`，转成十进制为`11.07999992370605469`，约等于`11.08`
 
 更加详细的说明可以自行搜索，或者查看官方文档 [Floating-Point Types, Formats, and Values](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.2.3)
+
+### 规约形式的浮点数
+
+如果浮点数中指数域的编码值在`0 < exponent <= 2^e - 2`，且在科学表示法的表示方式下，尾数部分的最高有效位为1，那么这个浮点数称为`规约形式的浮点数`。在这种情况下，尾数有一位隐含的二进制有效数字1。
+
+### 非规约形式的浮点数
+
+如果浮点数的指数部分的编码值为0，尾数部分不为0，那么这个浮点数被称为`非规约形式的浮点数`。一般是某个数字相当接近于0时才会使用非规约形式来表示。
 
 ## 类定义
 
@@ -472,43 +480,12 @@ System.out.println(Float.min(-Float.NaN, 1.0f)); // NaN
 
 从文章各种说明也可以看出来，`Float`代码比前两次相对来说复杂多了。其中比较重要的是`IEEE 754`标准，因为实际代码中很多都是根据标准而来，如果对标准有所了解整体思路理解起来就会简单很多。另外其中一些方法的计算（如`compare`，`equals`）等也是比较有意思的，看了代码你就了解了为什么`new Float(0.0f).equals(new Float(-0.0f))`是不成立的。
 
+另外中间因为考虑浮点数的有效位数这个问题，网上搜索了很久的资料，五花八门的，各种答案都有，不过还是看英文资料叙述的详细，有兴趣的可以看看下面提供的参考资料，**强烈推荐！！！**
 
+## 参考资料
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. [维基百科](https://zh.wikipedia.org/wiki/IEEE_754)
+2. [Single-precision_floating-point_format](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)
+3. [Is the most significant decimal digits precision that can be converted to binary and back to decimal without loss of significance 6 or 7.225?](https://stackoverflow.com/questions/30688422/is-the-most-significant-decimal-digits-precision-that-can-be-converted-to-binary)
+4. [What's the reason why “text-float-text” guarantee 6 digit but “float-text-float” does 9?](https://stackoverflow.com/questions/47123510/whats-the-reason-why-text-float-text-guarantee-6-digit-but-float-text-float)
+5. [Decimal Precision of Binary Floating-Point Numbers](https://www.exploringbinary.com/decimal-precision-of-binary-floating-point-numbers/)
