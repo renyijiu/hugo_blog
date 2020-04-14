@@ -216,7 +216,7 @@ received: (json) =>
 </div>
 ```
 
-最终就得到了下图的效果，当有新回复时，处于当前页面的用户会收到提醒。![](/images/new_reply.png)
+最终就得到了下图的效果，当有新回复时，处于当前页面的用户会收到提醒。![](../../img/new_reply.png)
 
-最后附上一张曹力在RubyConf China 2016上关于 **[ActionCable 与实时交互](https://speakerdeck.com/shiningray/actioncablehe-shi-shi-jiao-hu)**中的PPT的一张截图，全面的解析了整体过程![](/images/actioncable.png)
+最后附上一张曹力在RubyConf China 2016上关于 **[ActionCable 与实时交互](https://speakerdeck.com/shiningray/actioncablehe-shi-shi-jiao-hu)** 中的PPT的一张截图，全面的解析了整体过程![]( ../../img/actioncable.png)
 

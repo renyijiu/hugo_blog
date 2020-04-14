@@ -161,7 +161,7 @@ copyright = "Live For Dream, Dream For Love."            # default: author.name 
   [params.reward]                                         # 文章打赏
     enable = true
     wechat = "/img/reward/wechat.png"           # 微信二维码
-    alipay = "/img/reward/alipay.jpg"           # 支付宝二维码
+    alipay = "/img/reward/alipay.png"           # 支付宝二维码
 
   [params.coding]
     enable = false
